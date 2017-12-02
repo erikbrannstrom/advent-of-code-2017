@@ -22,8 +22,9 @@ def run_test(day):
                 star, test_case[0], test_case[1], output))
         return success
 
-    success = run_case(test_cases[0], day_module.first, 1) and run_case(
-        test_cases[1], day_module.second, 2)
+    success = run_case(test_cases[0], day_module.first, 1)
+    if hasattr(day_module, "second"):
+        success = success and run_case(test_cases[1], day_module.second, 2)
 
     if success:
         print("All tests for {} were successful.".format(day))
