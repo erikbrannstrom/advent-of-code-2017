@@ -76,3 +76,18 @@ day8 = (
 		c inc -20 if c == 10"""), 10)
 	]
 )
+
+day11 = (
+	[
+		("ne,ne,ne", 3),
+		("ne,ne,sw,sw", 0),
+		("ne,ne,s,s", 2),
+		("se,sw,se,sw,sw", 3)
+	],
+	[
+		("ne,ne,ne", 3),
+		("ne,ne,sw,sw", 2),
+		("ne,ne,s,s", 2),
+		("se,sw,se,sw,sw", 3)
+	]
+)
